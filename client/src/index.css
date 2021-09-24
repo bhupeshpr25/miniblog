@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #f0f8ffc2;
+  font-family: 'Rubik', sans-serif;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+.homepage {
+  background: #1a202c;
+  height: 100%;
+}
+
+.showcase {
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+}
+
+.login-page,
+.signup-page,
+.write-page {
+  background: #1a202c;
+  height: 100vh;
+}
+
+.single {
+  background: #1a202c;
+  height: 200vh;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home {
+  display: flex;
+}
+
+.cards {
+  flex: 9;
+  width: 75%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.postinfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginButton:disabled {
+  cursor: not-allowed;
+  background-color: #3e5b66;
+}
+
+/* Media Query */
+@media (min-width: 340px) and (max-width: 576px) {
+  .navbar {
+    margin-right: 200px;
+    justify-content: space-between;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .cards {
+    padding-left: 10%;
+  }
+
+  .single-post {
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 850px) {
+  .sidebar {
+    display: none;
+  }
+
+  .navbar {
+    margin-right: 75px;
+    justify-content: space-evenly;
+  }
+
+  .header {
+    margin-left: 50px;
+  }
+
+  .cards {
+    left: 80px;
+    justify-content: space-between;
+  }
+
+  .desc {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1800px) {
+  .desc {
+    max-width: 800px;
+  }
+
+  .login {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .sidebar {
+    right: 50px;
+  }
+
+  .login {
+    margin-right: 20px;
+  }
+
+  .cards {
+    margin-left: 50px;
+  }
+  .card {
+    padding-left: 40px;
+  }
+
+  .single-post {
+    padding-left: 10px;
+  }
+
+  .desc {
+    width: 1200px;
+  }
+}

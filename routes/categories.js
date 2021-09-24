@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const Category = require('../models/CAtegory');
+const Category = require('../models/Category');
 
 //CREATE CATEGORY
 router.post('/', async (req, res) => {

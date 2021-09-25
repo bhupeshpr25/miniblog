@@ -117,7 +117,7 @@
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1800px) {
+@media (min-width: 1000px) and (max-width: 1800px) {
   .desc {
     max-width: 800px;
   }

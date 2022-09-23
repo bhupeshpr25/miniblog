@@ -72,7 +72,7 @@ function Sidebar() {
         borderRadius="lg"
         borderColor="gray.600"
       >
-        <Link href="https://github.com/HanakoK9/miniblog" isExternal>
+        <Link href="https://github.com/bhupeshpr25/miniblog" isExternal>
           <IconButton
             icon={<FiGithub />}
             variant="outline"
